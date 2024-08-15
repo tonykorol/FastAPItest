@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "fastapitest"
+version = "0.1.0"
+description = ""
+authors = ["Anton Korol <korol142@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.112.0"}
+sqlalchemy = "^2.0.32"
+uvicorn = "^0.30.5"
+alembic = "^1.13.2" # Для создания миграций таблиц
+pydantic = "^2.8.2"
+passlib = "^1.7.4" # Для шифрования паролей
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
